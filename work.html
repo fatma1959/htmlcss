@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Html</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
+
+        nav {
+
+            max-width: 1200px;
+            margin-top: auto;
+        }
+
+        #logo img {
+            position: sticky;
+            left: 0px;
+            top: 0px;
+            width: 100px;
+            height: 100px;
+
+        }
+
+        ul {
+            text-align: center;
+
+
+        }
+
+        ul li {
+            display: inline-block;
+
+
+        }
+
+        ul li a {
+            padding: 10px 15px;
+            text-decoration: none;
+            border: 1px solid transparent;
+            color: #000;
+            font-weight: bold;
+            position: relative;
+
+        }
+
+        ul li.active a {
+            background-color: red;
+            color: #000;
+
+        }
+
+        ul li a:hover {
+            background-color: none;
+            color: #e2002a;
+            text-decoration-line: underline;
+        }
+
+        #imag {
+            top: auto;
+            width: 1334.94px;
+            height: 435.609px;
+            display: block;
+
+        }
+
+        p {
+            text-align: center;
+            font-weight: normal;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+
+        }
+
+        caption {
+            text-align: center;
+            font-weight: bold;
+            background-color: lightskyblue;
+        }
+
+        table,
+        th,
+        td {
+            margin-top: 25px;
+            border: 1px solid black;
+            width: 500px;
+            height: 50px;
+            margin-left: 30%;
+
+        }
+
+        div {
+            padding: 5px;
+            margin-left: 10%;
+            margin-top: 25px;
+
+
+        }
+        footer{
+            text-align: center;
+            background-color: lightslategrey;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div id="logo">
+                <img src="./imweb/go.jpg" alt="logo">
+            </div>
+            <ul>
+                <li class="active"><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Work">Work</a></li>
+                <li><a href="#Resume">Resume</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="Home">
+            <img src="https://gomytech.gomycode.co/content/images/2020/05/inside-gomycode.jpg" alt="gomy" id="imag">
+
+        </section>
+        <section id="About">
+
+
+            <p> Cascading Style Sheets, fondly referred to as CSS, is a simple design
+                language intended to simplify the process of making web pages
+                presentable. CSS handles the look and feel part of a web page. Using
+                CSS, you can control the color of the text, the style of fonts, the
+                spacing between paragraphs, how columns are sized and laid out, what
+                background images or colors are used, layout designs,variations in
+                display for different devices and screen sizes as well as a variety of
+                other effects. CSS is easy to learn and understand but it provides
+                powerful control over the presentation of an HTML document. Most
+                commonly, CSS is combined with the markup languages HTML or XHTML.</p>
+
+
+
+        </section>
+        
+        <section id="Work">
+
+            <table>
+                <caption> Study Time</caption>
+                <tr>
+                    <th>Time</th>
+
+                    <th>Students</th>
+                    <th>Lessons</th>
+                </tr>
+                <tr>
+                    <td> 14.00-18.00</td>
+                    <td> Fatma</td>
+                    <td>html</td>
+                </tr>
+                <tr>
+                    <td>9.00-13.00</td>
+                    <td>khaled</td>
+                    <td>css</td>
+                </tr>
+                <tr>
+                    <td>14.00-18.00</td>
+                    <td>Anis</td>
+                    <td>js</td>
+                </tr>
+            </table>
+
+        </section>
+        <section id="#Resume">
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="name">
+                </div>
+
+                <div>
+                    <label for="date"> Date:</label>
+                    <input type="date">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+    
+                   </div>
+                <div>
+                    <label for="message">message:</label>
+                    <textarea name="message" id="message" cols="40" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <label for="name">Country:</label>
+                    <select name="Country" type="text">
+                        <option value="Tunisie">Tunisie</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Maroc">Maroc</option>
+                        <option value="Libye">Libye</option>
+                </div>
+                <br>
+              
+
+                </select>
+
+            </form>
+
+
+        </section>
+
+    </main>
+    <footer>
+        &copy;rightWorkshop
+    </footer>
+</body>
+
+</html>
